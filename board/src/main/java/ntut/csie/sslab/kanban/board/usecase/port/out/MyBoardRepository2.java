@@ -1,4 +1,4 @@
-package ntut.csie.sslab.kanban.board.usecase.create;
+package ntut.csie.sslab.kanban.board.usecase.port.out;
 
 import ntut.csie.sslab.kanban.board.usecase.MyBoard2;
 

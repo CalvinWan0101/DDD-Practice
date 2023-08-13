@@ -1,9 +1,12 @@
-package ntut.csie.sslab.kanban.board.usecase.create;
+package ntut.csie.sslab.kanban.board.usecase.service;
 
 import ntut.csie.sslab.ddd.usecase.cqrs.CqrsOutput;
 import ntut.csie.sslab.kanban.board.usecase.MyBoard2;
+import ntut.csie.sslab.kanban.board.usecase.port.in.create.CreateMyBoardInput2;
+import ntut.csie.sslab.kanban.board.usecase.port.in.create.CreateMyBoardUseCase2;
+import ntut.csie.sslab.kanban.board.usecase.port.out.MyBoardRepository2;
 
-public class CreateMyBoardService2 implements CreateMyBoardUseCase2{
+public class CreateMyBoardService2 implements CreateMyBoardUseCase2 {
 
     private final MyBoardRepository2 repository;
     public CreateMyBoardService2 (MyBoardRepository2 repository) {

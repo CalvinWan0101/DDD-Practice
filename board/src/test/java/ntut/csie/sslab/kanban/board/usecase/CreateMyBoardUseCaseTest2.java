@@ -1,10 +1,9 @@
 package ntut.csie.sslab.kanban.board.usecase;
 
 import ntut.csie.sslab.ddd.usecase.cqrs.CqrsOutput;
-import ntut.csie.sslab.kanban.board.usecase.create.CreateMyBoardInput2;
-import ntut.csie.sslab.kanban.board.usecase.create.CreateMyBoardService2;
-import ntut.csie.sslab.kanban.board.usecase.create.CreateMyBoardUseCase2;
-import ntut.csie.sslab.kanban.board.usecase.create.MyBoardRepository2;
+import ntut.csie.sslab.kanban.board.usecase.port.in.create.CreateMyBoardInput2;
+import ntut.csie.sslab.kanban.board.usecase.service.CreateMyBoardService2;
+import ntut.csie.sslab.kanban.board.usecase.port.out.MyBoardRepository2;
 import org.junit.jupiter.api.Test;
 
 import java.util.UUID;
