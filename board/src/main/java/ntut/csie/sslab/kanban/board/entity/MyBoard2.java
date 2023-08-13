@@ -1,11 +1,14 @@
 package ntut.csie.sslab.kanban.board.entity;
 
-public class MyBoard2 {
+import ntut.csie.sslab.ddd.model.AggregateRoot;
+
+public class MyBoard2 extends AggregateRoot<String> {
     private String teamId;
     private String boardId;
     private String name;
 
     public MyBoard2(String teamId, String boardId, String name) {
+        super(boardId);
         this.teamId = teamId;
         this.boardId = boardId;
         this.name = name;
