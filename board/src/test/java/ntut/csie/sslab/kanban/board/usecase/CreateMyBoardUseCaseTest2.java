@@ -12,6 +12,7 @@ public class CreateMyBoardUseCaseTest2 {
 
     @Test
     public void create_myboard_use_case() {
+        MyBoardRepository2 repository = new MyBoardRepository2();
         CreateMyBoardUseCase2 createMyBoardUseCase = new CreateMyBoardUseCase2();
         CreateMyBoardInput2 input = new CreateMyBoardInput2();
         input.setTeamId(UUID.randomUUID().toString());
@@ -21,5 +22,6 @@ public class CreateMyBoardUseCaseTest2 {
         CqrsOutput2 output = createMyBoardUseCase.execute(input);
 
         assertNotNull(output.getId());
+        assertTrue(repository.findById(output.getId()).isPresent());
     }
 }
