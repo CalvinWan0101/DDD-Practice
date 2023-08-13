@@ -1,9 +1,15 @@
-package ntut.csie.sslab.kanban.board.usecase.create;
+package ntut.csie.sslab.kanban.board.entity;
 
-public class CreateMyBoardInput2 {
+public class MyBoard2 {
     private String teamId;
     private String boardId;
     private String name;
+
+    public MyBoard2(String teamId, String boardId, String name) {
+        this.teamId = teamId;
+        this.boardId = boardId;
+        this.name = name;
+    }
 
     public String getTeamId() {
         return teamId;
