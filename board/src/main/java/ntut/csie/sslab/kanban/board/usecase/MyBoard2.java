@@ -1,4 +1,4 @@
-package ntut.csie.sslab.kanban.board.entity;
+package ntut.csie.sslab.kanban.board.usecase;
 
 public class MyBoard2 {
     private String teamId;

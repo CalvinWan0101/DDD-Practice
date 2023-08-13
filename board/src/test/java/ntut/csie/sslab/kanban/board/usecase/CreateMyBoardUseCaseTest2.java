@@ -2,6 +2,7 @@ package ntut.csie.sslab.kanban.board.usecase;
 
 import ntut.csie.sslab.kanban.board.usecase.create.CreateMyBoardInput2;
 import ntut.csie.sslab.kanban.board.usecase.create.CreateMyBoardUseCase2;
+import ntut.csie.sslab.kanban.board.usecase.create.MyBoardRepository2;
 import org.junit.jupiter.api.Test;
 
 import java.util.UUID;
