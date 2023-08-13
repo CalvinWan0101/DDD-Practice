@@ -1,6 +1,8 @@
 package ntut.csie.sslab.kanban.board.usecase.create;
 
-public class CreateMyBoardInput2 {
+import ntut.csie.sslab.ddd.usecase.Input;
+
+public class CreateMyBoardInput2 implements Input {
     private String teamId;
     private String boardId;
     private String name;
