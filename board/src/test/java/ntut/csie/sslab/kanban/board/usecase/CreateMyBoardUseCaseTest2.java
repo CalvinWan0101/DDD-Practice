@@ -1,7 +1,6 @@
 package ntut.csie.sslab.kanban.board.usecase;
 
 import ntut.csie.sslab.kanban.board.usecase.create.CreateMyBoardInput2;
-import ntut.csie.sslab.kanban.board.usecase.create.CreateMyBoardOutput2;
 import ntut.csie.sslab.kanban.board.usecase.create.CreateMyBoardUseCase2;
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +18,7 @@ public class CreateMyBoardUseCaseTest2 {
         input.setBoardId(UUID.randomUUID().toString());
         input.setName("First test board");
 
-        CreateMyBoardOutput2 output = createMyBoardUseCase.execute(input);
+        CqrsOutput2 output = createMyBoardUseCase.execute(input);
 
         assertNotNull(output.getId());
     }
